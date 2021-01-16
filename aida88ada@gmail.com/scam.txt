@@ -1,0 +1,115 @@
+Delivered-To: kodnt56@gmail.com
+Received: by 2002:a02:2114:0:0:0:0:0 with SMTP id e20csp137441jaa;
+        Thu, 3 Dec 2020 23:53:43 -0800 (PST)
+X-Received: by 2002:a19:ae06:: with SMTP id f6mr2875438lfc.133.1607068423261;
+        Thu, 03 Dec 2020 23:53:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1607068423; cv=none;
+        d=google.com; s=arc-20160816;
+        b=j1AP0Y7g9One1K1sxtd9ynNe/heIPbUcfBhhirESlDnfdse4taM6OX6FKjC8W2QBPQ
+         PPQIXnEdTB4ECKfzX4YVDf2nsTwj5BhEDCYPZnpQBF6VvGVcX/0qChmlDyQYUefdV4Fv
+         CX1U7xfJkg/Qw98T1rNx5mCHJPk+UIXD9R9I+GPpSoiHIkwLz9b1jl9j9z6x47NmARVc
+         Yh64SF0kTlQwgCTB3OOz3C4tcDf4pp4EBfN5n2Y+jwqFo5wwwDBC5i66iW3mCRUUsPi0
+         3btPB64QQQvLMfMO7xgrKgEZWmswrjkC2hbNNPo2T1Yx6qFiRWBNgZWqfvfXEq0q3zAg
+         HosQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:to:message-id:from:date:dkim-signature;
+        bh=+sC3jCiI/v/g4eKx0eAtK2/X7lq7N0IUgXHjrr6hg04=;
+        b=u2XDTTWRAxYcrExjSCvBypTwiKBJ916iNkXXvoGXLyPE9Tjy3uDA5Y3fvRcFoUq37z
+         CX5/VcSq4TqUlmKbeNerun4dVoovXDNApy7d5prqTqHGhGkMbtZJbPGtpPsm77FNt1kG
+         naGSCL9HEzx/MrVnGBlg+CAiRRndvB72cNN02BbjUqbjx+ya2qXmQfi82I0+1K62Gi6+
+         ymm5HA5QP9BoOnR1K/JJit3P76qbjyQtgH0kaKIsrdt9RJkqjgUPAFF224NoHNzOB+fi
+         uvdw5zBUZufrTbzWsJrYNLjrw9si36ObJ27s21hKUBYVRhoexWkKmWYPAuYzo+fqbO4J
+         EndQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=shUCwywG;
+       spf=pass (google.com: domain of aida88ada@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aida88ada@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <aida88ada@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id q5sor1708884lji.22.2020.12.03.23.53.42
+        for <kodnt56@gmail.com>
+        (Google Transport Security);
+        Thu, 03 Dec 2020 23:53:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of aida88ada@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=shUCwywG;
+       spf=pass (google.com: domain of aida88ada@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aida88ada@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=date:from:message-id:to:mime-version;
+        bh=+sC3jCiI/v/g4eKx0eAtK2/X7lq7N0IUgXHjrr6hg04=;
+        b=shUCwywGVP1K5D7TFg8gp8mCBBgn//SgE3vXwf0ybtQPIsCkeIAKDcngUHgLa9zETO
+         4G3BCPQwIEhq6a1VKPuD8WOJelkVXbmzFXjJr7u7dRrmAB9QNl3+5VUIM2a1KY4qKPrL
+         cHcV5g7A+WfRwvuNtLrETkOgpeuaPFg/NnSkXJuuDZBT6j9H+BpaF3Dzcz2X+9VwgnfT
+         N+3Y4kCXrRV8w4Dyi8Q0DhVI+bMNIrslOX8py18LLKbhQ31xugXYXWCobJ9K13wc5IDh
+         nM+zy9PoLdr7nO1nEZH/EPkGxhIpooY7JZnbtxrkNEQapGLwAKzKB53Q8My5h+wvMBfs
+         62kA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:message-id:to:mime-version;
+        bh=+sC3jCiI/v/g4eKx0eAtK2/X7lq7N0IUgXHjrr6hg04=;
+        b=D9gXB8Q0t13RRJE/lRgT+fvz+oNojbZBAgilPEZ3pl7CGem8R4IP0gGeONkFY8EZKm
+         2mbRnVr9CO2TXvBxWAgLYRu1LU52qElqQdvA5ibZZDcdPV/A+2kGM4g1toUeLjv22lYw
+         GObqEpOVToOCiWUbs8J+ASOmcCKimyXD4ph+KWTIC1eKAtpEtZubo4K/YR4ZEtzsoO9O
+         aFa29QjfKdpuoLP58hduoNAIa3IsovE2rleFE6fym4nFvO0N5W412whTYuv5Jja0WlIH
+         i/ea4j3zGh2PS12Z6z+A4jhAKllPYvBR6JHwi5FUDve+aNgMwjs+AcK5ZEWWIWMOqOgV
+         GmJQ==
+X-Gm-Message-State: AOAM533I1E17aTvQ1+Jm7kD1IuGh3Z22eOeRH4LrWBJr6X+RWw7xpVwO pM4cMKvZToaEQVn03fo2NaijI5ZJMt4=
+X-Google-Smtp-Source: ABdhPJxidWzjNvzkQf+gGAROsBLBr4r4+GCjx4cs91mpl/s/FupOHhPOzus7cmjPYDCUHwgGqa3JiA==
+X-Received: by 2002:a2e:86c1:: with SMTP id n1mr2657717ljj.351.1607068422486;
+        Thu, 03 Dec 2020 23:53:42 -0800 (PST)
+Return-Path: <aida88ada@gmail.com>
+Received: from localhost ([178.205.172.34])
+        by smtp.gmail.com with ESMTPSA id q26sm1405850lfd.260.2020.12.03.23.53.40
+        for <kodnt56@gmail.com>
+        (version=TLS1_1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 03 Dec 2020 23:53:41 -0800 (PST)
+Date: Fri, 4 Dec 2020 10:53:40 +0300
+From: aida88ada <aida88ada@gmail.com>
+Message-ID: <1905099646.20201204100840@gmail.com>
+To: Kent Roderick <kodnt56@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----------0451261832FCDF4B3"
+
+------------0451261832FCDF4B3
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hi . Finally, we can talk again. I was waiting for you to text me. And
+I am very glad see your letter. I really liked it and I think I should
+share my thoughts with you. I want to find someone with whom I'll be
+happy. I need a man with whom I will be well in soul and body. I think
+you  also  want to find my loved one? You got me interested and I want
+to  know about you and your life. Tell me about yourself? Came more of
+their  photos?  In  return I will answer any of your questions. I look
+forward to new letters from you. A big kiss. Dina
+------------0451261832FCDF4B3
+Content-Type: IMAGE/JPEG; name="after the meeting.jpeg"
+Content-transfer-encoding: base64
+Content-Disposition: attachment; filename="after the meeting.jpeg"
+
+
+------------0451261832FCDF4B3
+Content-Type: IMAGE/JPEG; name="Do you like the way I am.jpg"
+Content-transfer-encoding: base64
+Content-Disposition: attachment; filename="Do you like the way I am.jpg"
+
+
+------------0451261832FCDF4B3
+Content-Type: IMAGE/JPEG; name="Home.jpeg"
+Content-transfer-encoding: base64
+Content-Disposition: attachment; filename="Home.jpeg"
+
+
+------------0451261832FCDF4B3--
+
+
+Hi . Finally, we can talk again. I was waiting for you to text me. And
+I am very glad see your letter. I really liked it and I think I should
+share my thoughts with you. I want to find someone with whom I'll be
+happy. I need a man with whom I will be well in soul and body. I think
+you  also  want to find my loved one? You got me interested and I want
+to  know about you and your life. Tell me about yourself? Came more of
+their  photos?  In  return I will answer any of your questions. I look
+forward to new letters from you. A big kiss. Dina

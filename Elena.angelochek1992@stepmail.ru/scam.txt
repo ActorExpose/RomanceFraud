@@ -1,0 +1,76 @@
+Delivered-To: kodnt56@gmail.com
+Received: by 2002:a02:2721:0:0:0:0:0 with SMTP id g33csp136046jaa;
+        Fri, 15 Jan 2021 02:41:10 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxF5Vxb/Js21jkaQkRpZqSBt3IALmMVLRU40HZIpJZZS8w4J3iEbIPYMwKFeITU8kCcPhTu
+X-Received: by 2002:a25:5855:: with SMTP id m82mr14318227ybb.300.1610707270423;
+        Fri, 15 Jan 2021 02:41:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1610707270; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GQjco8ycI53y+tQ+gX3SD/Uywz3Y64eBABfNOk9QI++MUUu+2dHMY3p8h0Q0Qmi2L7
+         Qjqfky9OSeLI5qiVU5efj29BtYKbPoJoSp24nssONj2afwfWP20QLku1j9/5tvSm2OIu
+         kzFdC/kPX2CFZORSxjNPp9rC8DIDA6RAvxdvBxgrFNutbgSONydO3oae6QMTEHPWomE7
+         Vd9mB2n5/Jz+MkWPUjb1if4tAcH8kiPA2IQ1nHbM6XSO5eRJy6lMwo+PitzPXSU7Fbkt
+         hVGtR1zeqHhLTZzdU+YkWUipbbf6sRVOFXNfGyvj3w8Rm9u/UZjPrDOJd8ETAWp12f96
+         H0zg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:reply-to:mime-version:from:subject:to
+         :dkim-signature;
+        bh=+57hDMEK7efDkuu2oEY+1AKyVcj0C2aCdA1znZt37pk=;
+        b=bZbvq+X37JgD8p70QIlD6mdncwi+6s0lfzk/uim7qWcbAqTm7s13XEdbj+Fd1HqmeC
+         NS+OTaZpGpOIioKR0NCJbfS5BjLjm4xtL/mzAITvL3QdsWL9GgCySo5AJQ8jWo1YZzFY
+         8V35K9SP7e24w3sPQkGjM2CV8RulvCmxsv+OGOpk3MosHsSGndkREv8QcZ1Ciox9rjY8
+         tusaOMLQ5QtrI5cxCIS09qRWGWCA7l1CPLQZcLUr8abiIxdZolIPqdoyBQH7LUagLfR8
+         PlSKZTBMKOSBvBZbIGHx9XbMy8+2ljDuzOSvTbVFf9IP+St6omPdEU+RIY7BTY3EYTxF
+         Nt4Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@journalsnj.com header.s=default header.b=EoA50TWC;
+       spf=neutral (google.com: 162.241.143.237 is neither permitted nor denied by best guess record for domain of journals@jou.journalsnj.com) smtp.mailfrom=journals@jou.journalsnj.com;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=stepmail.ru
+Return-Path: <journals@jou.journalsnj.com>
+Received: from jou.journalsnj.com ([162.241.143.237])
+        by mx.google.com with ESMTPS id j7si7306259ybt.380.2021.01.15.02.41.09
+        for <kodnt56@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 15 Jan 2021 02:41:10 -0800 (PST)
+Received-SPF: neutral (google.com: 162.241.143.237 is neither permitted nor denied by best guess record for domain of journals@jou.journalsnj.com) client-ip=162.241.143.237;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@journalsnj.com header.s=default header.b=EoA50TWC;
+       spf=neutral (google.com: 162.241.143.237 is neither permitted nor denied by best guess record for domain of journals@jou.journalsnj.com) smtp.mailfrom=journals@jou.journalsnj.com;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=stepmail.ru
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=journalsnj.com; s=default; h=Date:Message-Id:Reply-To:Content-type: MIME-Version:From:Subject:To:Sender:Cc:Content-Transfer-Encoding:Content-ID: Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe: List-Subscribe:List-Post:List-Owner:List-Archive; bh=+57hDMEK7efDkuu2oEY+1AKyVcj0C2aCdA1znZt37pk=; b=EoA50TWCy2LPIgi7BULIls9MzN XcREB8WAPYjJPj+VrholOyfAZqb7bfo0x6JaFPckYimTL3HOm3LJXZOHngu+wRfGzcr9hq3be2sWX jT9ukoGsfhMJvossAcZpZGfPMiocpqgOoTQRB3jIc/nafMd/oqaQYNSSrfe9MtWtOETyjc44yKbfK KsaeVbnJAj2Uh1xZVrNLlL9jNehZkmWhwUZSBiPMEsUyZiWYvS1rzjXD2m5GhL70AhIBHglSmG0dD pTP0j+y7HSd8RltRj50iqo3dkqHBOWHHB+Zde2RPOmfX0B/CEmGYHMKE/hkcMiRSSZ31/6L/C9Wrg Ec0Zsz7w==;
+Received: from journals by jou.journalsnj.com with local (Exim 4.93) (envelope-from <journals@jou.journalsnj.com>) id 1l06sH-0004vs-OC for kodnt56@gmail.com; Thu, 14 Jan 2021 11:57:33 -0600
+To: kodnt56@gmail.com
+Subject: hello
+X-PHP-Script: journalsnj.com/369870.php for 188.165.53.64
+X-PHP-Originating-Script: 1005:369870.php
+From: "Elena.angelochek1992" <Elena.angelochek1992@stepmail.ru>
+MIME-Version: 1.0;
+Content-type: multipart/mixed; boundary="--Nh7INK1jFp"
+Reply-To: Elena.angelochek1992@stepmail.ru
+Message-Id: <E1l06sH-0004vs-OC@jou.journalsnj.com>
+Date: Thu, 14 Jan 2021 11:57:33 -0600
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - jou.journalsnj.com
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [1005 991] / [47 12]
+X-AntiAbuse: Sender Address Domain - jou.journalsnj.com
+X-Get-Message-Sender-Via: jou.journalsnj.com: authenticated_id: journals/only user confirmed/virtual account not confirmed
+X-Authenticated-Sender: jou.journalsnj.com: journals
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+
+----Nh7INK1jFp
+Content-type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Hi! How are you doing? I for the first time write the similar letter. I am a little I am confused! My name Elena . I from a city Ulyanovsk. It large a city in the European part the Russian Federation. 28 years. I cheerful and serious the girl. Still I brave because be I shy, I never have not decided to write this letter. I ask you to give me pair of minutes of your time! I am assured, that my letter will be interesting to you! I just have received recently yours electronic box in agency of acquaintances. I hope, what you just as also I try to find here the love, correctly? If it so I have desire to write you slightly about itself and to tell to you, for what reason I wish to construct relations in social networks. I wish to test my destiny and to try to find the love through the Internet because to me have not carried to find in my city responsible the man who was able to respect the woman. Men in Russia concern the woman as to a thing and do not think that the woman too can sincerely like. I think, that you responsible the man whom it is valid search here for the the significant other and notices in the woman not only a figure, but also soul! I hope, that you will respond me so I can even more to tell about yourself and to send to you mine a photography! I wait your answer that to fasten our acquaintance. Best regards,Elena 
+----Nh7INK1jFp
+Content-Type: image/jpeg; name="IMG_2431.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <8266290ebc795f96c42dcde116fd9462>
+
+
+----Nh7INK1jFp--
+
+Hi! How are you doing? I for the first time write the similar letter. I am a little I am confused! My name Elena . I from a city Ulyanovsk. It large a city in the European part the Russian Federation. 28 years. I cheerful and serious the girl. Still I brave because be I shy, I never have not decided to write this letter. I ask you to give me pair of minutes of your time! I am assured, that my letter will be interesting to you! I just have received recently yours electronic box in agency of acquaintances. I hope, what you just as also I try to find here the love, correctly? If it so I have desire to write you slightly about itself and to tell to you, for what reason I wish to construct relations in social networks. I wish to test my destiny and to try to find the love through the Internet because to me have not carried to find in my city responsible the man who was able to respect the woman. Men in Russia concern the woman as to a thing and do not think that the woman too can sincerely like. I think, that you responsible the man whom it is valid search here for the the significant other and notices in the woman not only a figure, but also soul! I hope, that you will respond me so I can even more to tell about yourself and to send to you mine a photography! I wait your answer that to fasten our acquaintance. Best regards,Elena
