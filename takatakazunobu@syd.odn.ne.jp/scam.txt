@@ -1,0 +1,108 @@
+Delivered-To: kodnt56@gmail.com
+Received: by 2002:a02:d06:0:0:0:0:0 with SMTP id 6csp232212jax;
+        Wed, 6 Jan 2021 22:31:06 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw6JIWzdRY7edGYrq+htxvMw2aca8nfimoKGu3sdczow+1z0ldEoANJkznQjSR0GSBSyDxp
+X-Received: by 2002:a62:864e:0:b029:1ab:e82c:d724 with SMTP id x75-20020a62864e0000b02901abe82cd724mr7563515pfd.9.1610001066053;
+        Wed, 06 Jan 2021 22:31:06 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1610001066; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hIUhGZKNYGV2XvNV/kRqo6Lf/6DWTO4eSquZdwhu/WArts1UHOiW6qcm3hfGmFJQ6S
+         iwX+Pd08oTwX0YErtpCbE/ZfHgp0H2kAlaChVZaAicgyKv7d1exiFBPTd0d3k8NYZ+U9
+         xigpxYxFIF0ZuEc7R8K3mPkxfiM3UQucosWNpGb9SFCpglygPC6ZsmTB2F/asDkz84Rp
+         mWqWU8H/KT/0LTpa1cLwR043/xvORKG5yEc83U8yJauAvmE4pQRrjuufFIjZags3V6Vi
+         J/TXZbI1lQPGnvpRMq95QGThLfZMUM+vd0jurjqSQpo6WI4BvyQCpQHtCyhDmxRs7Bws
+         fNbg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:subject:from:to
+         :date;
+        bh=MHZ4P8DYeTlS/VHfCY9hsY7/1kT5/OWeW7tGHCYM66w=;
+        b=m5Hg/InIzQy4/u9tMQPoCqERuZu+gvjVQzl9sBmFNYZG7n7v5pcZJpPpV9QaMXwgis
+         FtXedCi3ib2z8cAKQC2FIMcUFkhitvp49D5+iu0Cwi9SosMPZIQgiP9nHR6x7lSp5D/T
+         UwU+6illyaB/BD1IFRZJRPkMvkL4ljargJ3HazpbGapvYyIaeuHuRZ+A9827Qam63WHl
+         w2PaXHo8nu2MqqAI5x7BI9MEZlL3RJbUb9iEKlK32gc96lNfgKRFHchvwiiSi1YaZzP+
+         LI+6EbZ5ccQZVtBn+zAxklamuvC450DNGs0Evm0Qglha2rkMr93aCEcqjmRV5SZZC1Qz
+         GVdA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of takatakazunobu@syd.odn.ne.jp designates 210.134.90.7 as permitted sender) smtp.mailfrom=takatakazunobu@syd.odn.ne.jp;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=syd.odn.ne.jp
+Return-Path: <takatakazunobu@syd.odn.ne.jp>
+Received: from cmsa507.odn.ne.jp (msa507.odn.ne.jp. [210.134.90.7])
+        by mx.google.com with ESMTP id y1si4953626pll.400.2021.01.06.22.31.05
+        for <kodnt56@gmail.com>;
+        Wed, 06 Jan 2021 22:31:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of takatakazunobu@syd.odn.ne.jp designates 210.134.90.7 as permitted sender) client-ip=210.134.90.7;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of takatakazunobu@syd.odn.ne.jp designates 210.134.90.7 as permitted sender) smtp.mailfrom=takatakazunobu@syd.odn.ne.jp;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=syd.odn.ne.jp
+Received: from vmsa507.odn.ne.jp by cmsa507.odn.ne.jp with ESMTP
+          id <20210107063104799.HGRR.5206.cmsa507.odn.ne.jp@msa507.odn.ne.jp>
+          for <kodnt56@gmail.com>; Thu, 7 Jan 2021 15:31:04 +0900
+Received: from msrg5071.rgserv.odn.ne.jp by vmsa507.odn.ne.jp with ESMTP
+          id <20210107063104779.ZHZP.39513.vmsa507.odn.ne.jp@msa507.odn.ne.jp>;
+          Thu, 7 Jan 2021 15:31:04 +0900
+X-Odn-Service: VIRUS-CHECKED
+Received: from localhost (85.248.227.163) by msrg5071.rgserv.odn.ne.jp (9.0.018.07.06)
+        id 5E783BE31C2B2E2F; Thu, 7 Jan 2021 15:31:04 +0900
+Date: Thu, 7 Jan 2021 13:30:57 +0700
+To: kodnt56@gmail.com
+From: Tatianushoka Tanya <takatakazunobu@syd.odn.ne.jp>
+Subject: Greetings.
+Message-ID: <gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo@localhost>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo"
+Content-Transfer-Encoding: 8bit
+
+--b1_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo
+Content-Type: multipart/alternative; boundary="b2_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo"
+
+--b2_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+ Salutation! I feel hopeful you will come in for this letter and will famil=
+iarize with it carefully! This is my last effort to find outa person on the=
+ Internet, as all my last attempts have been broken down. Serious relations=
+hip is my only sole intent. If you are a hunter of only immoral and naked p=
+hotos, then please don't disturb me. I will tell you a few words about my s=
+elf. My name is Tatiana. I'm from Ukraine. What do you know about my countr=
+y? It's a long time I'm thinking to move to another country to live. I'm af=
+ore thirty-five y.o, and I understand that I am looking for a strong relati=
+onship, with a open-hearted and smart man. So I don't want to play games. I=
+ am not going to prove anything to anyone, as I am knowledgeable, intellige=
+nt young lady. I am totally a financially secured person as I am a dentist =
+and I 'am working in a dental clinic. This is a brief information about me.=
+ If you are interested in my letter, then I am waiting for your reply. Writ=
+e me something about your self too, how old are you and the city in which y=
+ou live. Periodically I will review my emails and you may already answer me=
+.If you are interested Please reply ONLY to my regular e-mail:ukrrmanyadent@gmail.com 
+Waiting for your letter, Tanyulka.
+--b2_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+ Salutation! I feel hopeful you will come in for this letter and will famil=
+iarize with it carefully! This is my last effort to find outa person on the=
+ Internet, as all my last attempts have been broken down. Serious relations=
+hip is my only sole intent. If you are a hunter of only immoral and naked p=
+hotos, then please don't disturb me. I will tell you a few words about my s=
+elf. My name is Tatiana. I'm from Ukraine. What do you know about my countr=
+y? It's a long time I'm thinking to move to another country to live. I'm af=
+ore thirty-five y.o, and I understand that I am looking for a strong relati=
+onship, with a open-hearted and smart man. So I don't want to play games. I=
+ am not going to prove anything to anyone, as I am knowledgeable, intellige=
+nt young lady. I am totally a financially secured person as I am a dentist =
+and I 'am working in a dental clinic. This is a brief information about me.=
+ If you are interested in my letter, then I am waiting for your reply. Writ=
+e me something about your self too, how old are you and the city in which y=
+ou live. Periodically I will review my emails and you may already answer me=
+.<br><br>If you are interested Please reply ONLY to my regular e-mail: ukrr=
+manyadent@gmail.com<br><br>Waiting for your letter, Tanyulka.
+
+--b2_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo--
+--b1_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo
+Content-Type: image/jpeg; name="PCX220.jpg"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=PCX220.jpg
+
+
+--b1_gB5Ekezp5KB7S2EJV0MgmakSStf2KC45PUnwzRsZo--
